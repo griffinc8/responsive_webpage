@@ -22,6 +22,19 @@ header {
     width: 100%;
 }
 
+.headerContent .description {
+    border: 2px solid rgb(227, 221, 221);
+    padding-left: 25px;
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.headerContent .photo {
+    height: fit-content;
+    z-index: 1;
+    
+}
+
 .headerContent img {
     max-width: 500px;
     max-height: 500px;
