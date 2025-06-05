@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "responsive_webpage",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/griffinc8/responsive_webpage/issues"
   },
-  "homepage": "https://github.com/griffinc8/responsive_webpage#readme"
+  "homepage": "https://github.com/griffinc8/responsive_webpage#readme",
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
 }

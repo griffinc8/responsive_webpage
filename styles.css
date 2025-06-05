@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+    width: 100%;
+} /* keep an eye on this assumption */
+
+body {
+    margin: 50px 50px 50px 50px;    
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 500px;
+    width: 100%;
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: row;    
+    width: 100%;
+}
+
+.headerContent img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.description p {
+    font-size: 30px;
+}
