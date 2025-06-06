@@ -1,10 +1,13 @@
-html, body {
-    height: 100%;
+body {
     width: 100%;
-} /* keep an eye on this assumption */
+    height: 100%;
+}
 
 body {
-    margin: 50px;    
+    margin: 50px; 
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -20,6 +23,13 @@ header {
     flex-direction: row;  
     max-width: 1250px;  
     width: 100%;
+}
+
+@media (max-width: 800px) {
+    .headerContent {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .headerContent .description {
@@ -46,8 +56,9 @@ header {
 
 main {
     display: flex;
-    flex-direction: row ;
+    flex-direction: column ;
     justify-content: center;  
+    align-items: center;
     width: 100%;
 }
 
@@ -55,7 +66,8 @@ main {
     min-height: 2000px;
     max-width: 1250px ;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 350px);
     gap: 20px;
     row-gap: 35px;
     width: 100%;
@@ -65,4 +77,9 @@ main {
     height: 100%;
     width: 100%;
     border: 1px solid;
+}
+
+.grid-tile {
+    width: auto;    
+    max-height: 350px;
 }
