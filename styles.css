@@ -4,9 +4,8 @@ html, body {
 } /* keep an eye on this assumption */
 
 body {
-    margin: 50px 50px 50px 50px;    
+    margin: 50px;    
 }
-
 
 header {
     display: flex;
@@ -18,7 +17,8 @@ header {
 
 .headerContent {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;  
+    max-width: 1250px;  
     width: 100%;
 }
 
@@ -42,4 +42,27 @@ header {
 
 .description p {
     font-size: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;  
+    width: 100%;
+}
+
+.mainContent {
+    min-height: 2000px;
+    max-width: 1250px ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    row-gap: 35px;
+    width: 100%;
+}
+
+.projectContent {
+    height: 100%;
+    width: 100%;
+    border: 1px solid;
 }
