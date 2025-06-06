@@ -16,14 +16,15 @@ header {
     justify-content: center;
     min-height: 500px;
     width: 100%;
+    max-width: 1250px;
 }
 
-.headerContent {
+/* .headerContent {
     display: flex;
     flex-direction: row;  
     max-width: 1250px;  
     width: 100%;
-}
+} */
 
 #name {
     height: 0px;
@@ -35,7 +36,7 @@ header {
     font-size: 40px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .headerContent {
         flex-direction: column;
         align-items: center;
@@ -52,12 +53,17 @@ header {
 .headerContent .photo {
     height: fit-content;
     z-index: 1;
-    
 }
 
-.headerContent img {
+header img {
     max-width: 500px;
     max-height: 500px;
+}
+
+header .description {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
 }
 
 .description p {
