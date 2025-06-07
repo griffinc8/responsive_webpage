@@ -30,6 +30,10 @@ header {
     font-size: 40px;
 }
 
+#aboutme {
+    font-size: 55px; margin-top: 5px; margin-bottom: 2px; text-align: center;
+}
+
 header .description {
     border: 2px solid rgb(227, 221, 221);
     padding-left: 25px;
@@ -57,6 +61,11 @@ header .description {
     font-size: 30px;
 }
 
+#mainTitle{
+    font-size:2.5em;
+    margin-bottom: 15px;
+}
+
 main {
     display: flex;
     flex-direction: column ;
@@ -66,16 +75,15 @@ main {
 }
 
 .mainContent {
-    min-height: 2000px;
     max-width: 1250px ;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 350px);
     gap: 20px;
     row-gap: 35px;
-    width: 100%;    
+    width: 100%;   
+    place-items: center; 
 }
-
 
 .projectContent {
     height: 100%;
@@ -89,7 +97,7 @@ main {
 }
 
 .mainContent img {
-    width: 350px;
+    width: 100%;
 }
 
 
@@ -100,6 +108,9 @@ main {
     
     header .photo {
         float: left;
+        position: relative;
+        top: -30px;
+        left: -35px;
     }
 
     .mainContent{
@@ -107,5 +118,12 @@ main {
         grid-template-columns: repeat(2, 1fr);
         place-items: center
     }
-  
+}
+
+@media (max-width: 500px) {
+    .mainContent{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center
+    }
 }
