@@ -19,7 +19,6 @@ header {
     max-width: 1250px;
 }
 
-
 #name {
     height: 0px;
     margin: 0px;
@@ -63,7 +62,6 @@ header .description {
 
 #mainTitle{
     font-size:2.5em;
-    margin-bottom: 15px;
 }
 
 main {
@@ -78,7 +76,6 @@ main {
     max-width: 1250px ;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 350px);
     gap: 20px;
     row-gap: 35px;
     width: 100%;   
@@ -93,19 +90,17 @@ main {
 
 .grid-tile {
     width: 350px;    
-    max-height: 350px;
 }
 
 .mainContent img {
     width: 100%;
 }
 
-
-@media (max-width: 1000px) {
+@media (500px < width < 1000px) {
     header {
         display: block;
     }
-    
+
     header .photo {
         float: left;
         position: relative;
@@ -120,7 +115,17 @@ main {
     }
 }
 
-@media (max-width: 500px) {
+@media (width < 500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .description {
+        border: none;
+    }
+
     .mainContent{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
