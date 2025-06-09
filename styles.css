@@ -124,6 +124,41 @@ main {
     width: 100%;
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    height: 500px;
+}
+
+footer .content {
+    display: flex;
+    flex-direction: row;
+    max-width: 1250px;
+}
+
+footer .text {
+    flex-grow: 1;
+}
+
+footer .image {
+    flex-basis: 0%;
+}
+
+footer .image img {
+    height: 100%;
+    width: auto;
+}
+
+.footercolor {
+    background-color: #71a3c1;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    top: -500px;
+    z-index: -1;
+}
+
 @media (500px < width < 1000px) {
     header {
         display: block;
