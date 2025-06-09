@@ -129,20 +129,8 @@ footer {
     flex-direction: row;
     justify-items: center;
     height: 500px;
-}
-
-footer .content {
-    display: flex;
-    flex-direction: row;
     max-width: 1250px;
-}
-
-footer .text {
-    flex-grow: 1;
-}
-
-footer .image {
-    flex-basis: 0%;
+    width: 100%;
 }
 
 footer .image img {
