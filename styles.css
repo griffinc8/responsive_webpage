@@ -17,6 +17,7 @@ header {
     min-height: 500px;
     width: 100%;
     max-width: 1250px;
+    background-color: #00ebff
 }
 
 #name {
@@ -38,6 +39,9 @@ header .description {
     padding-left: 25px;
     border-top-right-radius: 2%;
     border-bottom-right-radius: 2%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 35px;
 }
 
 header .photo {
@@ -47,13 +51,6 @@ header .photo {
 
 header img {
     max-height: 550px;
-}
-
-header .description {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: -25px;
-    padding-left: 35px;
 }
 
 .description p {
@@ -72,13 +69,15 @@ main {
     width: 100%;
 }
 
+/* https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-advanced-grid-properties*/
+
 .mainContent {
+    width: 100%;
     max-width: 1250px ;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
-    row-gap: 35px;
-    width: 100%;   
+    row-gap: 35px; 
     place-items: center; 
 }
 
@@ -88,8 +87,8 @@ main {
     border: 1px solid;
 }
 
-.grid-tile {
-    width: 350px;    
+.grid-tile { 
+    border: 1px solid;  
 }
 
 .mainContent img {
@@ -107,12 +106,6 @@ main {
         top: -30px;
         left: -35px;
     }
-
-    .mainContent{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        place-items: center
-    }
 }
 
 @media (width < 500px) {
@@ -124,11 +117,5 @@ main {
 
     header .description {
         border: none;
-    }
-
-    .mainContent{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        place-items: center
     }
 }
