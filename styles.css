@@ -124,19 +124,48 @@ main {
     width: 100%;
 }
 
+.projectName {
+    display: flex;
+    height: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.projectName svg,
+.projectName img {
+    height: 100%;
+}
+
+.twoRow {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+}
+
+.projectName p {
+    width: 100%;
+    margin: 0px;
+}
+
 footer {
     display: flex;
     flex-direction: row;
-    justify-items: center;
+    justify-content: space-between  ;
     height: 500px;
     max-width: 1250px;
     width: 100%;
+}
+
+footer .text {
+    color: white;
 }
 
 footer .image img {
     height: 100%;
     width: auto;
 }
+
+
 
 .footercolor {
     background-color: #71a3c1;
@@ -147,6 +176,25 @@ footer .image img {
     z-index: -1;
 }
 
+footer .text span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+svg  {
+    width: 25px;
+    height: 25px;
+}
+
+footer .text .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    height: 35px;
+    gap: 5px
+}
 @media (500px < width < 1000px) {
     header {
         display: block;
