@@ -200,7 +200,7 @@ footer .text .links {
         display: block;
     }
 
-    header .photo {
+    header img {
         float: left;
         position: relative;
         top: -30px;
@@ -223,4 +223,8 @@ footer .text .links {
         justify-content: center;
     }
 
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
