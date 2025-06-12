@@ -36,12 +36,14 @@ header {
 
 #name {
     height: 0px;
-    margin: 0px;
+    width: 0px;
+}
+
+#name h1 {
+    color:white;
     position: relative;
-    top: -50px;
-    color: white;
-    text-align: center;
-    font-size: 40px;
+    top: 450px;
+    left: -250px
 }
 
 #aboutme {
@@ -206,6 +208,13 @@ footer .text .links {
         top: -30px;
         left: -35px;
     }
+
+    #name h1 {
+    color:white;
+    position: relative;
+    top: 410px;
+    left: -250px
+    }
 }
 
 @media (width < 500px) {
@@ -234,5 +243,11 @@ footer .text .links {
 
     .footercolor {
         height: 1100px;
+    }
+    #name h1 {
+    color:white;
+    position: relative;
+    top: -110px;
+    left:-55px
     }
 }
