@@ -225,6 +225,14 @@ footer .text .links {
 
     footer {
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+    }
+
+    footer img {
+        max-width: 95%;
+    }
+
+    .footercolor {
+        height: 1100px;
     }
 }
